@@ -10,6 +10,8 @@ Descripción del Proyecto;
     Este proyecto es realizado como reto o "Challenge" para Alura-ONE, esta es mi humilde muestra de lo aprendido a lo largo del curso brindado con tanta calidad por la gente de Alura Latam, donde ellos enseñaron los pasos para llegar a este momento y a partir de ahora a seguir mejorando
 
 Estado del proyecto;
+En construcción... Trabajando lento pero constante :D
+
 Demostración de funciones y aplicaciones;
 Acceso al Proyecto;
 Tecnologías utilizadas;
