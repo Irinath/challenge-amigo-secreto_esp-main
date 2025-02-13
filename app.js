@@ -4,7 +4,10 @@
 let listaNombresAmigo = [];
 let nombreAmigo = '';
 
-function agregarAmigos(){
+
+
+function agregarAmigo(){
+    alert('Esto es un click');
     //Leer nombre del placeholder
     let nombreAmigo = document.getElementById('amigo');
     //click on botón "Añadir"
@@ -22,5 +25,11 @@ function limpiarCaja() {
     document.querySelector('#valorUsuario').value = ''; 
 }
 
+function cambiarElemento(elemento, texto) {
+    let elementoHTML = document.querySelector(elemento);
+    elementoHTML.innerHTML = texto;
+}
+
+cambiarElemento('h2', 'Escriba el nombre de su Amigo');
 //Sobre el campo "Escribe un nombre" se va a añadir el nombre al array nombreAmigo y debe accionarse con el botón añadir
 //através de la función "agregarAmigos"
