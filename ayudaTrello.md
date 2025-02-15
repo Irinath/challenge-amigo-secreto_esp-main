@@ -3,6 +3,8 @@ Escribe una función que seleccione de manera aleatoria uno de los nombres almac
 Tareas específicas:
 
 1_Validar que haya amigos disponibles: Antes de sortear, comprobar si el array amigos no está vacío.
+Desactivar el botón sortear amigos mientras el array esté en 0
+Verificar que no haya nombres repetidos --> debe hacerse a medida que se ingresan los nombre
 
 2_Generar un índice aleatorio: Usar Math.random() y Math.floor() para seleccionar un índice aleatorio del arreglo.
 
@@ -13,8 +15,8 @@ Tareas específicas:
 
 *Adicionales*
 
-Colocar listener al placeholder para ingresar con la tecla "enter"
-cambiar el estilo css para que sea más agradable visualmente
-.
+Colocar listener al placeholder para ingresar con la tecla "enter".
+cambiar el estilo css para que sea más agradable visualmente.
+Implementar la función sortearAmigos para limpiar y ordenar código.
 .
 .
