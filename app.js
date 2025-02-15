@@ -27,19 +27,48 @@ function agregarAmigo(){
     }
     limpiarCaja();
     cambiarElemento('h2', 'Escribe el nombre de tu amigo');
+    cargarLista();
 }
 
 function sortearAmigos(){
     //click en botón "sortearAmigo"
+
+    limpiarLista();
 }
 
 function cargarLista(){
     //Lee el nombre de la lista 
-    //y lo agrega en el HTML en el elemneto "ul"
+    let lista = document.querySelector('ul, .listaAmigos');
+
+    //limpio lista
+    lista.innerHTML = "";
+
+    //Recorro el arreglo y agrego los items en la lista de HTML
+    listaNombresAmigo.forEach(nombreAmigo => {
+        //Creo el elemento li
+        let liNombre = document.createElement("li");
+        
+        //Añado el elemento li
+       //liNombre.textContent = nombreAmigo; //Funcionan ambos para insertar elemenetos 
+        liNombre.innerHTML = nombreAmigo;  
+
+        //Inserto el "li" en la lista "ul"
+        lista.appendChild(liNombre);
+    });
+    return;
 }
 
 function limpiarCaja() {
     document.querySelector('#amigo').value = ''; 
+}
+
+function limpiarLista(){
+     //Lee el nombre de la lista 
+    lista = document.querySelector('ul, .listaAmigos');
+
+     //limpio lista
+    lista.innerHTML = ""; 
+    return;
 }
 
 function cambiarElemento(elemento, texto) {
@@ -54,6 +83,11 @@ function contarCaracteres(nombreAmigo) {
     //retorna el número
     return (caracteres);
 } 
+
+function listarAmigos(){
+
+    return;
+}
 
 cambiarElemento('h2', 'Escriba el nombre de su Amigo');
 //Sobre el campo "Escribe un nombre" se va a añadir el nombre al array nombreAmigo y debe accionarse con el botón añadir
