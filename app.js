@@ -34,16 +34,15 @@ function sortearAmigo(){
     //click en botón "sortearAmigo"
     //Validar que el arreglo no esté vacío.
     
-    if (listaNombresAmigo.length != 0){
+    if (listaNombresAmigo.length > 0){
         //Generar un número aleatorio para el índice
-        let sortearNumerolista = Math.floor(Math.random()*((listaNombresAmigo.length)+1));
+        let sortearNumerolista = Math.floor(Math.random()*(listaNombresAmigo.length));
         console.log(sortearNumerolista);
         //Obtener el nombre sorteado.
-        listaNombresAmigo[sortearNumerolista];
+        let ulGanador = document.getElementById('resultado'); //listaNombresAmigo[sortearNumerolista];
         console.log(listaNombresAmigo[sortearNumerolista]);
      //Mostrar el resultado agregándolo en la lista
-        let ulGanador = document.getElementById('resultado');
-        lista.innerHTML = listaNombresAmigo[sortearNumerolista];
+        ulGanador.innerHTML = `<li>El amigo secreto elegido es: <strong> ${listaNombresAmigo[sortearNumerolista]}</strong></li>`;
     } else {
         while (listaNombresAmigo.length = 0){
         alert('¡Debe ingresar al menos el nombre de un amigo!')
@@ -52,6 +51,7 @@ function sortearAmigo(){
     }
     return;
     //limpiar el arreglo
+
     //Deshabilitar el botón de sorteo para reiniciar el juego;
 }
 
@@ -87,6 +87,7 @@ function limpiarLista(){
 
      //limpio lista
     lista.innerHTML = ""; 
+    listaNombresAmigo = [];
     return;
 }
 
