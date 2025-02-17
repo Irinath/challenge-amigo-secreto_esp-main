@@ -1,5 +1,5 @@
 :root {
-    --color-primary: #4B69FD;
+    --color-primary: #9382e0; /*#4B69FD;*/
     --color-secondary: #FFF9EB;
     --color-tertiary: #C4C4C4;
     --color-button: #fe652b;
@@ -136,7 +136,11 @@ ul {
 
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
+    /*background-color: linear-gradient(to right, #f373d7, #9382e0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:  transparent; #05DF05;*/
+    color: #ff0cca;
     font-size: 22px;
     font-weight: bold;
     text-align: center;

@@ -13,7 +13,7 @@ function agregarAmigo(){
     //listaNombresAmigo.push(nombreAmigo);
     console.log(listaNombresAmigo); //Eliminar
     console.log(contarCaracteres(nombreAmigo)); //Eliminar
-    //limpiarCaja();
+
     //Verificar que el campo no esté vacío
     if (contarCaracteres(nombreAmigo) >= 2){
         //agrega nombre a la lista "nombreAmigo"
@@ -33,7 +33,6 @@ function agregarAmigo(){
 function sortearAmigo(){
     //click en botón "sortearAmigo"
     //Validar que el arreglo no esté vacío.
-    
     if (listaNombresAmigo.length > 0){
         //Generar un número aleatorio para el índice
         let sortearNumerolista = Math.floor(Math.random()*(listaNombresAmigo.length));
@@ -43,6 +42,7 @@ function sortearAmigo(){
         console.log(listaNombresAmigo[sortearNumerolista]);
      //Mostrar el resultado agregándolo en la lista
         ulGanador.innerHTML = `<li>El amigo secreto elegido es: <strong> ${listaNombresAmigo[sortearNumerolista]}</strong></li>`;
+        limpiarLista(); //limpio el arreglo
     } else {
         while (listaNombresAmigo.length = 0){
         alert('¡Debe ingresar al menos el nombre de un amigo!')
@@ -50,9 +50,6 @@ function sortearAmigo(){
     }
     }
     return;
-    //limpiar el arreglo
-
-    //Deshabilitar el botón de sorteo para reiniciar el juego;
 }
 
 function cargarLista(){
@@ -86,7 +83,7 @@ function limpiarLista(){
     lista = document.querySelector('ul, .listaAmigos');
 
      //limpio lista
-    lista.innerHTML = ""; 
+    lista.innerHTML = " ";
     listaNombresAmigo = [];
     return;
 }
@@ -105,14 +102,6 @@ function contarCaracteres(nombreAmigo) {
 } 
 
 
-function listarAmigos(){
-
-    return;
-}
-
-//function sortearNumerolista(){
-   // return(sortearNumerolista);}
-
-cambiarElemento('h2', 'Escriba el nombre de su Amigo');
+cambiarElemento('h2', 'Escribe el nombre de tu Amigo');
 //Sobre el campo "Escribe un nombre" se va a añadir el nombre al array nombreAmigo y debe accionarse con el botón añadir
 //através de la función "agregarAmigos"
