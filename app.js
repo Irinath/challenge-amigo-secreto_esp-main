@@ -9,16 +9,11 @@ let nombreAmigo = '';
 function agregarAmigo(){
     //Leer nombre del placeholder
     let nombreAmigo = document.getElementById('amigo').value.trim();
-    //click on botón "Añadir"
-    //listaNombresAmigo.push(nombreAmigo);
-    console.log(listaNombresAmigo); //Eliminar
-    console.log(contarCaracteres(nombreAmigo)); //Eliminar
-
+   
     //Verificar que el campo no esté vacío
     if (contarCaracteres(nombreAmigo) >= 2){
         //agrega nombre a la lista "nombreAmigo"
-    listaNombresAmigo.push(nombreAmigo);
-    console.log(listaNombresAmigo);
+        listaNombresAmigo.push(nombreAmigo);
     } else {       
         //alert('El nombre debe contener al menos 2 (dos) letras');
         cambiarElemento('h2', 'El nombre debe contener al menos 2 (dos) letras');
@@ -36,10 +31,9 @@ function sortearAmigo(){
     if (listaNombresAmigo.length > 0){
         //Generar un número aleatorio para el índice
         let sortearNumerolista = Math.floor(Math.random()*(listaNombresAmigo.length));
-        console.log(sortearNumerolista);
+       
         //Obtener el nombre sorteado.
         let ulGanador = document.getElementById('resultado'); //listaNombresAmigo[sortearNumerolista];
-        console.log(listaNombresAmigo[sortearNumerolista]);
      //Mostrar el resultado agregándolo en la lista
         ulGanador.innerHTML = `<li>El amigo secreto elegido es: <strong> ${listaNombresAmigo[sortearNumerolista]}</strong></li>`;
         limpiarLista(); //limpio el arreglo
