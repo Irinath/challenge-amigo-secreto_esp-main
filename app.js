@@ -96,6 +96,6 @@ function contarCaracteres(nombreAmigo) {
 } 
 
 
-cambiarElemento('h2', 'Escribe el nombre de tu Amigo');
+cambiarElemento('h2', 'Escribe el nombre de tu amigo');
 //Sobre el campo "Escribe un nombre" se va a añadir el nombre al array nombreAmigo y debe accionarse con el botón añadir
 //através de la función "agregarAmigos"

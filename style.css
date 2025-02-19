@@ -1,5 +1,6 @@
 :root {
-    --color-primary: #755edf; /*#4B69FD;*/
+    --color-primary: #755edf; 
+    /*#4B69FD;  background-color: linear-gradient(to right, #ff0cca , var( --color-primary), #4B69FD);*/
     --color-secondary: #FFF9EB;
     --color-tertiary: #C4C4C4;
     --color-button: #fe652b;
