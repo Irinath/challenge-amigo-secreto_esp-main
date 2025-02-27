@@ -9,7 +9,7 @@ let nombreAmigo = '';
 function agregarAmigo(){
     //Leer nombre del placeholder
     let nombreAmigo = document.getElementById('amigo').value.trim();
-   
+    amigo.focus()
     //Verificar que el campo no esté vacío
     if (contarCaracteres(nombreAmigo) >= 2){
         //agrega nombre a la lista "nombreAmigo"
@@ -52,7 +52,7 @@ function cargarLista(){
 
     //limpio lista
     lista.innerHTML = "";
-
+    
     //Recorro el arreglo y agrego los items en la lista de HTML
     listaNombresAmigo.forEach(nombreAmigo => {
         //Creo el elemento li
@@ -69,7 +69,8 @@ function cargarLista(){
 }
 
 function limpiarCaja() {
-    document.querySelector('#amigo').value = ''; 
+    document.querySelector('#amigo').value = '';
+     
 }
 
 function limpiarLista(){

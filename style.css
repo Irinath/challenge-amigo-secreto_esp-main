@@ -132,6 +132,7 @@ ul {
     color: var(--color-text);
     font-family: "Inter", sans-serif;
     font-size: 18px;
+    font-weight: 600;
     margin: 20px 0;
 }
 
