@@ -18,7 +18,8 @@
 
 body {
     height: 100vh;
-    background-color: var(--color-primary);
+    /*background-color: var(--color-primary);*/
+    background: linear-gradient(to top right, hotpink 35% , var( --color-primary) 75%, #4B69FD 95%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,7 +67,10 @@ body {
     font-family: "Inter", serif;
     font-size: 36px;
     font-weight: 700;
-    color: var(--color-primary);
+    background: linear-gradient(to right, #ff0cca , var( --color-primary), #4B69FD);
+    -webkit-background-clip: text;
+    color: transparent;
+   /* color: var(--color-primary);*/
     margin: 10px 0;
     text-align: center;
 }
